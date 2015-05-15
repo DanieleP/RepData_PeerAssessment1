@@ -178,7 +178,7 @@ MaxInterval</code></pre>
 </div>
 <div id="devise-a-strategy-for-fillin-in-all-of-the-missing-values-in-the-dataset" class="section level3">
 <h3>Devise a strategy for fillin in all of the missing values in the dataset</h3>
-<p>I’ll fill all the missing values with the average of that specific interval.</p>
+<p>As a fillin strategy I replace the NA values with the average steps of the specific interval of time.</p>
 <p>Output: MD.Activity data.frame</p>
 <pre class="r"><code>MD.Activity &lt;- Activity
 MD.Activity$steps[is.na(MD.Activity$steps)] &lt;- stepsXinterval[

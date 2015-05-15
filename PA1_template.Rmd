@@ -113,7 +113,7 @@ sum(is.na(Activity$steps))
 ```
 
 ### Devise a strategy for fillin in all of the missing values in the dataset
-I'll fill all the missing values with the average of that specific interval.
+As a fillin strategy I replace the NA values with the average steps of the specific interval of time.
 
 Output: MD.Activity data.frame
 ```{r}
